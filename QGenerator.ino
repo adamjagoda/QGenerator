@@ -173,7 +173,7 @@ String CommandCom(const char * dataIn, size_t lenIn)
    outputString += inputString + "\n";
 
    int separatorIndex = inputString.indexOf(":");
-   int intValue = 0;
+   signed long int ntValue = 0;
    String variableName = inputString.substring(0,separatorIndex);
    
    String itsValue = (separatorIndex >=0) ? inputString.substring(separatorIndex+1) : "\0";
